@@ -1,0 +1,162 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef3f8;
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+/* Hero con imagen de fondo */
+.hero {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 520px;
+    margin-top: 56px;
+}
+
+/* Capa oscura para que el texto se lea bien */
+.hero-overlay {
+    min-height: 520px;
+    background: linear-gradient(
+        rgba(0, 20, 50, 0.78),
+        rgba(0, 20, 50, 0.65)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+#tituloPrincipal {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Contenido de páginas internas */
+.page-content {
+    margin-top: 110px;
+    margin-bottom: 60px;
+}
+
+/* Caja informativa */
+.info-box {
+    background-color: white;
+    padding: 30px;
+    border-left: 6px solid #0d6efd;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Tarjetas del portafolio */
+.tarjeta-proyecto {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta-proyecto img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #0d3b66;
+    font-weight: bold;
+}
+
+/* Formulario */
+.contact-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Detalle de proyectos */
+.detalle-proyecto {
+    background-color: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
+}
+
+.detalle-proyecto h1 {
+    color: #0d3b66;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #084298;
+}
+
+.btn-warning {
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0d3b66;
+    margin-top: 40px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero-overlay {
+        min-height: 420px;
+    }
+
+    #tituloPrincipal {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .page-content {
+        margin-top: 90px;
+    }
+
+    .info-box,
+    .contact-card,
+    .detalle-proyecto {
+        padding: 22px;
+    }
+}
